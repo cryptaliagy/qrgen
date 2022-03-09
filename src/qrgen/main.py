@@ -9,7 +9,8 @@ from qrcode.image.pil import PilImage
     '-s',
     '--ssid',
     type=str,
-    help='The name of the wifi network'
+    help='The name of the wifi network',
+    prompt=True,
 )
 @click.password_option('-k', '--keyphrase', confirmation_prompt=False)
 @click.option(
